@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Novo Aluno</h1>
-    <form method="POST" action="index.php">
+    <form method="POST" action="index.php?acao=salvar">
         <p>
             <label>Nome:</label><br>
             <input type="text" name="nome" required>

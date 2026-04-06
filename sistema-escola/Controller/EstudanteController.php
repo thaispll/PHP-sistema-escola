@@ -1,5 +1,6 @@
 <?php 
 require_once './Model/Estudante.php';
+require_once './config/Database.php';
 
 class EstudanteController {
     private $db;
@@ -21,7 +22,7 @@ class EstudanteController {
         //pede lista de dados ao Model
         $alunos = $this->estudante->buscarTodos();
 
-        require_once 'index.php';
+        require_once './View/lista.php';
     }
 
     public function salvar() {
